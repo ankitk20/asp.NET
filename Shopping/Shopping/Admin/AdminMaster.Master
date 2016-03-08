@@ -1,0 +1,37 @@
+﻿
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <form id="form2" runat="server">
+    <table style="margin:200px;width:400px;">
+        <tr>
+            <td colspan="3"><asp:Image id="bannerImage" runat="server" Height="90px" Width="600px" ImageUrl="~\Images\banner.jpg"/></td>
+        </tr>
+        <tr style="text-align:center;">
+            <td><a href="AddEditCategory.aspx">Category</a></td>
+            <td><a href="AddNewProduct.aspx">Products</a></td>
+            <td><a href="#">Customer Orders</a></td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <asp:Panel ID="panelCategories" runat="server">
+                  <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server" />
+                </asp:Panel>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align:right">
+                Brought to you by Loottera !!
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
