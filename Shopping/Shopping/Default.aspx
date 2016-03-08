@@ -20,7 +20,7 @@
                        <asp:Image ID="Image1" runat="server" Height="91px" ImageUrl="~/Images/logoPic.jpg" Width="100px" />                
                    </td>
                    <td style="width:250px;text-align:center">
-                      <asp:LinkButton ID="lblLogo" runat="server" Text="ShoppingHeart" CommandArgument="<%#Bind("ProductID") %>"" Font-Names="Eras Demi ITC" ForeColor="#ff0000" Font-Size="20pt" OnClick="lblLogo_Click"></asp:LinkButton>
+                      <asp:LinkButton ID="lblLogo" runat="server" Text="ShoppingHeart" Font-Names="Eras Demi ITC" ForeColor="#ff0000" Font-Size="20pt" OnClick="lblLogo_Click"></asp:LinkButton>
                       <br />
                       <em>For Those Who Love Shopping</em>
                    </td>
