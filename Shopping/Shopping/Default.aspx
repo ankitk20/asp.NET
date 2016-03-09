@@ -52,7 +52,7 @@
                             <tr>
                                 <td style="vertical-align:top;">
                                     <asp:Panel ID="panelProducts" runat="server" ScrollBars="Auto" Height="500px" BorderColor="Black"
-                                               borderstyle="solid" BorderWidth="1px">
+                                               borderstyle="solid" BorderWidth="1px" >
                                          <asp:DataList ID="dlProducts" runat="server" RepeatColumns="3" Width="719px" Font-Bold="False"
                                                        Font-Italic="false" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" 
                                                        OnSelectedIndexChanged="dlProducts_SelectedIndexChanged" CellPadding="4" ForeColor="#333333">

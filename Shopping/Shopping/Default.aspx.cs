@@ -79,14 +79,7 @@ namespace Shopping
             panelCategories.Visible = true;
             panelProducts.Visible = true;
             string query = "select * from Products where ProductId not in( select productID from CartItems)"; // here's the trick !!
-            using (SqlConnection connection = new SqlConnection(connString))
-            {
-                SqlCommand cmd = new SqlCommand(query, connection);
-                cmd.CommandType = CommandType.Text;
-                connection.Open();
-                dlProducts.DataSource = cmd.ExecuteReader();
-                dlProducts.DataBind();
-            }
+            ExecuteQueryReturn(query,dlProducts);
         }
 
         protected void buttonCartCount_Click(object sender, EventArgs e)
